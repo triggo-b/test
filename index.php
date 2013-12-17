@@ -1,31 +1,40 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 
 class Weather
 {
 
-    function getWeather ($city = false)
+    function __construct ()
     {
-        $url = 'http://api.openweathermap.org/data/2.5/weather?q=' . $city . ',ru';
-        $data = file_get_contents($url);
-        // print_r(json_decode($data));
-        $myArr = json_decode($data);
-        $err = $myArr->{'cod'};
-        if ($err == '404') {
-            return "äàííûå îòñóòñòâóşò";
-        } else {
-            $weather = 'Ãîğîä (ñòğàíà): ' . $myArr->{'name'} . ' (' . $myArr->sys->{'country'} . ')<br/>';
-            $weather .= 'Äàâëåíèå: ' . $myArr->main->{'pressure'} . '<br/>';
-            $weather .= 'Ñêîğîñòü âåòğà: ' . $myArr->wind->{'speed'};
-            return $weather;
-        }
+        define('URL', 'http://api.openweathermap.org/data/2.5/weather?q=');
     }
 
-    function displayWeather ($city = false)
+    public function getWeather ($city = false)
     {
-        return $this->getWeather($city);
+        $url = URL . $city . ',ru';
+        $data = file_get_contents($url);
+        $myArr = json_decode($data);
+        return $myArr;
+    }
+
+    public function getPressure ($city = false)
+    {
+        $info = $this->getWeather($city);
+        return $info->main->pressure;
+    }
+
+    public function getWindspeed ($city = false)
+    {
+        $info = $this->getWeather($city);
+        return $info->wind->speed;
+    }
+
+    public function displayWeather ($city = false)
+    {
+        $info = 'Ğ”Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ: ' . $this->getPressure($city) . '<br/>';
+        $info .= 'Ğ¡ĞºĞ¾Ñ€Ğ¾ÑÑ‚ÑŒ Ğ²ĞµÑ‚Ñ€Ğ°: ' . $this->getWindspeed($city);
+        return $info;
     }
 }
 $wt = new Weather();
 echo $wt->displayWeather('moscow');
-
-?>
