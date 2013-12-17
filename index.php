@@ -1,29 +1,35 @@
 <?php
+header('Content-Type: text/html; charset=utf-8');
 
 class Weather
 {
 
+    function __construct ()
+    {
+        define('URL', 'http://api.openweathermap.org/data/2.5/weather?q=');
+    }
+
     public function getWeather ($city = false)
     {
-        $url = 'http://api.openweathermap.org/data/2.5/weather?q=' . $city . ',ru';
+        $url = URL . $city . ',ru';
         $data = file_get_contents($url);
         $myArr = json_decode($data);
         return $myArr;
     }
 
-    function getPressure ($city = false)
+    public function getPressure ($city = false)
     {
-        $info = self::getWeather($city);
+        $info = $this->getWeather($city);
         return $info->main->pressure;
     }
 
-    function getWindspeed ($city = false)
+    public function getWindspeed ($city = false)
     {
-        $info = self::getWeather($city);
+        $info = $this->getWeather($city);
         return $info->wind->speed;
     }
 
-    function displayWeather ($city = false)
+    public function displayWeather ($city = false)
     {
         $info = 'Давление: ' . $this->getPressure($city) . '<br/>';
         $info .= 'Скорость ветра: ' . $this->getWindspeed($city);
