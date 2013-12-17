@@ -25,8 +25,8 @@ class Weather
 
     function displayWeather ($city = false)
     {
-        $info = 'Äàâëåíèå: ' . $this->getPressure($city) . '<br/>';
-        $info .= 'Ñêîğîñòü âåòğà: ' . $this->getWindspeed($city);
+        $info = 'Ğ”Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ: ' . $this->getPressure($city) . '<br/>';
+        $info .= 'Ğ¡ĞºĞ¾Ñ€Ğ¾ÑÑ‚ÑŒ Ğ²ĞµÑ‚Ñ€Ğ°: ' . $this->getWindspeed($city);
         return $info;
     }
 }
