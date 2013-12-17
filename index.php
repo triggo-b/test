@@ -3,26 +3,31 @@
 class Weather
 {
 
-    function getWeather ($city = false)
+    public function getWeather ($city = false)
     {
         $url = 'http://api.openweathermap.org/data/2.5/weather?q=' . $city . ',ru';
         $data = file_get_contents($url);
-        // print_r(json_decode($data));
         $myArr = json_decode($data);
-        $err = $myArr->{'cod'};
-        if ($err == '404') {
-            return "данные отсутствуют";
-        } else {
-            $weather = 'Город (страна): ' . $myArr->{'name'} . ' (' . $myArr->sys->{'country'} . ')<br/>';
-            $weather .= 'Давление: ' . $myArr->main->{'pressure'} . '<br/>';
-            $weather .= 'Скорость ветра: ' . $myArr->wind->{'speed'};
-            return $weather;
-        }
+        return $myArr;
+    }
+
+    function getPressure ($city = false)
+    {
+        $info = self::getWeather($city);
+        return $info->main->pressure;
+    }
+
+    function getWindspeed ($city = false)
+    {
+        $info = self::getWeather($city);
+        return $info->wind->speed;
     }
 
     function displayWeather ($city = false)
     {
-        return $this->getWeather($city);
+        $info = 'Давление: ' . $this->getPressure($city) . '<br/>';
+        $info .= 'Скорость ветра: ' . $this->getWindspeed($city);
+        return $info;
     }
 }
 $wt = new Weather();
