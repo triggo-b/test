@@ -38,5 +38,3 @@ class Weather
 }
 $wt = new Weather();
 echo $wt->displayWeather('moscow');
-
-?>
