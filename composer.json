@@ -2,6 +2,11 @@
     "name": "triggo-b/first",
     "version": "1.0.3",
     "require": {},
+	"autoload": {
+		"psr-0": {
+			"weather": "/"
+		}
+    },
     "repositories": [
         {
             "type": "vcs",
