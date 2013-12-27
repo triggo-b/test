@@ -1,19 +1,11 @@
 {
     "name": "triggo-b/first",
-    "description": "weather API client",
-    "keywords": ["weather API", "client"],
-    "homepage": "https://github.com/triggo-b/first",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
+    "version": "1.0.3",
+    "require": {},
+    "repositories": [
         {
-            "name": "Boris Savrasov",
-            "email": "boris.savrasov@esteit.com"
+            "type": "vcs",
+            "url": "https://github.com/triggo-b/first"
         }
-    ],
-    "autoload": {
-        "psr-0": {
-            "Weather": "index.php"
-        }
-    }
+    ]
 }
