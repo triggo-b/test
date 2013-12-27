@@ -1,6 +1,3 @@
-<?php
-header('Content-Type: text/html; charset=utf-8');
-
 class Weather
 {
 
@@ -36,5 +33,3 @@ class Weather
         return $info;
     }
 }
-$wt = new Weather();
-echo $wt->displayWeather('moscow');
