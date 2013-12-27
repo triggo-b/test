@@ -1,6 +1,6 @@
 {
     "name": "triggo-b/first",
-    "version": "1.0.3",
+    "version": "master",
     "require": {},
 	"autoload": {
 		"psr-0": {
