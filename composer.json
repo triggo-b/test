@@ -1,7 +1,7 @@
 {
     "name": "triggo-b/first",
 	"homepage": "https://github.com/triggo-b/first",
-	"type": "library",
+	"type": "git",
 	"license": "MIT",
     "require": {},
 	"autoload": {
