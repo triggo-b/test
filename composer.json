@@ -1,16 +1,12 @@
 {
     "name": "triggo-b/first",
-    "version": "master",
+	"homepage": "https://github.com/triggo-b/first",
+	"type": "library",
+	"license": "MIT",
     "require": {},
 	"autoload": {
 		"psr-0": {
-			"weather": "/"
+			"Weather": "/"
 		}
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/triggo-b/first"
-        }
-    ]
+    }
 }
