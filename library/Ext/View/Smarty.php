@@ -330,11 +330,10 @@ class Ext_View_Smarty extends Zend_View_Abstract
 //         }
 
         $this->_smarty = new Smarty();
-
+        
         if ($this->_config === null) {
             throw new Zend_View_Exception("Could not locate Smarty config - node 'smarty' not found");
         }
-
         $this->_smarty->caching = $this->_config['caching'];
         $this->_smarty->cache_lifetime = $this->_config['cache_lifetime'];
         $this->_smarty->template_dir = $this->_config['template_dir'];

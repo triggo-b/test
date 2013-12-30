@@ -3,11 +3,31 @@
         "phpunit/phpunit": "3.7.*",
 		"zendframework/zendframework1": "1.12.*",
 		"twitter/bootstrap": "v2.3.2",
-		"smarty/smarty": "3.1.16"
+		"smarty/smarty": "3.1.16",
+		"triggo-b/first": "*"
         },
     "autoload": {
         "psr-0": {
             "": "library/"
         }
-    }
+    },
+	"repositories": [
+		{
+				"type": "package",
+				"package": {
+					"name": "triggo-b/first",
+					"version": "1.0.0",
+					"source": {
+						"url":  "https://github.com/triggo-b/first.git",
+						"type": "git",
+						"reference": "master"
+					},
+	                "autoload": {
+		                 "psr-0": {
+			              "Weather": "lib/"
+			             }
+	                }
+				}
+		}
+	]
 }

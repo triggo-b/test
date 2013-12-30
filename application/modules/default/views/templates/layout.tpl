@@ -1,4 +1,5 @@
-<div id="header">
-  {include file="header.tpl"}
+{include file="header.tpl"}
+
+<div class="container">
+	{$this->layout()->content}
 </div>
-{$this->layout()->content}
