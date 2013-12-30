@@ -27,8 +27,12 @@ class Weatherd
 
     public function displayWeather ($city = false)
     {
-        $info = 'Давление: ' . $this->getPressure($city) . '<br/>';
-        $info .= 'Скорость ветра: ' . $this->getWindspeed($city);
-        return $info;
+		$weatherInfo = array(
+                                'ownCity'   => $city,
+                                'pressure'  => $this->getPressure($city),
+                                'windSpeed' => $this->getWindspeed($city)
+                        );
+
+        return $weatherInfo;
     }
 }
