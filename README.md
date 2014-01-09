@@ -27,4 +27,6 @@ extension = php_memcache.dll
 
 8. Проверяем правильность установки через phpinfo(). Должен появится блок memcache с директивами memcache.allow_failover, memcache.chunk_size, memcache.default_port, memcache.hash_function, memcache.hash_strategy, memcache.max_failover_attempts.
 
-9. Memcached готов к работе! :)
+9. Добавляем сервер/сервера memcached в исключения c://windows/system32/drivers/etc/hosts
+
+10. Memcached готов к работе! :)
