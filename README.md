@@ -1,4 +1,4 @@
-zendajax
+ZEND, ajax, WeatherAPI
 ========
 php_memcache.dll для php/ext/
 http://windows.php.net/downloads/pecl/releases/memcache/3.0.8/
