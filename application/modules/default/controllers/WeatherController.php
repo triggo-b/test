@@ -1,48 +1,32 @@
 <?php
-use Weather\Weatherd; 
+use Weather\Weatherd;
 
 class WeatherController extends Zend_Controller_Action
 {
-    public function indexAction()
-    {
-//         echo 'welcome to weatherController';
-    }
-    
+
+    public function indexAction () {}
+
     public function displayweatherAction ($city = false)
     {
         $city = $_GET['city'];
         $memcache_obj = Zend_Registry::get('MEMCACHE');
         
         $key = md5(strtolower($city));
-        $results = $memcache_obj->load($key);
-        
-        if($results) {
-            $weatherInfo = $results;
-        } else {
+        if (! $weatherInfo = $memcache_obj->load($key))
+            
             $weatherInfo = array(
-                                'ownCity'   => $city,
-                                'pressure'  => 'Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð°',
-                                'windSpeed' => 'Ð¸Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð½ÐµÐ´Ð¾ÑÑ‚ÑƒÐ¿Ð½Ð°'
-                        );
-            
-            $memcache_obj->save($weatherInfo, $key, array(), 3600);
-            
-//             $weatherInfo = (new Weather())->displayWeather($city);
-
-            $w = new Weatherd;
-            $weatherInfo = $w->displayWeather($city);
-            
-            $memcache_obj->save($weatherInfo, $key, array(), 3600);
-			
-        }
-		
+                    'ownCity' => $city,
+                    'pressure' => 'èíôîðìàöèÿ íåäîñòóïíà',
+                    'windSpeed' => 'èíôîðìàöèÿ íåäîñòóïíà'
+            );
         
+        $memcache_obj->save($weatherInfo, $key, array(), 3600);
         
-//         $this->view->ownCity   = $weatherInfo['ownCity'];
-//         $this->view->pressure  = $weatherInfo['pressure'];
-//         $this->view->windSpeed = $weatherInfo['windSpeed'];
-
-        return json_encode($weatherInfo);
+        $weatherInfo = (new Weatherd()) -> displayWeather($city);
         
+        $memcache_obj->save($weatherInfo, $key, array(), 3600);
+        
+        $json = $this->_helper->json->encodeJson($weatherInfo);
+        echo $json;
     }
 }

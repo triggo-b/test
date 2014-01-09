@@ -1,18 +1,23 @@
 $(document).ready( function() {
+	form = $('#myForm');
 	
-	$('#buttona').click(function() {
-		cityVal = $('#city').val();
+	form.submit(function(e) {
+		e.preventDefault();
 		
 		$.ajax({
 			url: '/weatherinfo',
 			type: 'get',
 			dataType: 'json',
-			data: {'city': cityVal},
-			success: function(data) {
-				$('#wInfo').append(data);
+			data: form.serialize(),
+			success: function(response) {
+				$('#wInfo').empty();
+				$.each(response, function(key, value) {
+					$('#wInfo').append(key + ': ' + value + '<br/>');
+				});
+			},
+			error: function() {
+				alert('something wrong');
 			}
 		});
-		
 	});
-	
 });
