@@ -25,8 +25,8 @@ class WeatherController extends Zend_Controller_Action
         $weatherInfo = (new Weatherd()) -> displayWeather($city);
         
         $memcache_obj->save($weatherInfo, $key, array(), 3600);
-        
-        $json = $this->_helper->json->encodeJson($weatherInfo);
+        /*-----------вызовем хелпер-----------------*/
+        $json1 = $this->_helper->json->encodeJson($weatherInfo);
         echo $json;
     }
 }
