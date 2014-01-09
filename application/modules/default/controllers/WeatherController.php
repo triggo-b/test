@@ -15,9 +15,9 @@ class WeatherController extends Zend_Controller_Action
         if (! $weatherInfo = $memcache_obj->load($key))
             
             $weatherInfo = array(
-                    'ownCity' => $city,
-                    'pressure' => 'èíôîğìàöèÿ íåäîñòóïíà',
-                    'windSpeed' => 'èíôîğìàöèÿ íåäîñòóïíà'
+                'ownCity' => $city,
+                'pressure' => 'Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ½ĞµĞ´Ğ¾ÑÑ‚ÑƒĞ¿Ğ½Ğ°',
+                'windSpeed' => 'Ğ¸Ğ½Ñ„Ğ¾Ñ€Ğ¼Ğ°Ñ†Ğ¸Ñ Ğ½ĞµĞ´Ğ¾ÑÑ‚ÑƒĞ¿Ğ½Ğ°'
             );
         
         $memcache_obj->save($weatherInfo, $key, array(), 3600);
