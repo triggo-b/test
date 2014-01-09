@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7bcd7c1-15e1-478d-b0a9-72d98eee00a3" name="Default" comment="Merge branch 'test'&#10;&#10;Conflicts:&#10;&#9;application/modules/default/controllers/WeatherController.php&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/3c0aa89723a279ab63fae3608f902422acf0c9ea.file.error.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/495115e677d4eb1fec4b8eef56321a1f21571696.file.index.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/7fdffe7b1cb20822d0a04057a5bb7b1670e6b6cc.file.displayweather.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/94430619f650d23bd47276ee50002b508f2d01db.file.index.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/a7700592ddfb3c19fac656fc7f3738ed29557d3c.file.header.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/tmp/smarty_compile/cb7081858de9a901ee1d12f7fc94ea84f53a2ebf.file.layout.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configs/application.ini" afterPath="$PROJECT_DIR$/application/configs/application.ini" />
     </list>
     <ignored path="deff.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +36,7 @@
       <file leaf-file-name="WeatherController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="1" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5868597" vertical-offset="0" max-vertical-offset="898">
+            <state line="32" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.6057907" vertical-offset="0" max-vertical-offset="898">
               <folding />
             </state>
           </provider>
@@ -49,6 +56,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php" />
       </list>
     </option>
   </component>
@@ -217,7 +225,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947367" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -276,7 +284,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="1" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5868597" vertical-offset="0" max-vertical-offset="898">
+        <state line="32" column="0" selection-start="858" selection-end="858" vertical-scroll-proportion="0.6057907" vertical-offset="0" max-vertical-offset="898">
           <folding />
         </state>
       </provider>

@@ -10,7 +10,7 @@ class WeatherController extends Zend_Controller_Action
     {
         $city = $_GET['city'];
         $memcache_obj = Zend_Registry::get('MEMCACHE');
-        
+
         $key = md5(strtolower($city));
         if (! $weatherInfo = $memcache_obj->load($key))
 
@@ -19,14 +19,14 @@ class WeatherController extends Zend_Controller_Action
                 'pressure' => 'информация недоступна',
                 'windSpeed' => 'информация недоступна'
             );
-            
-            $memcache_obj->save($weatherInfo, $key, array(), 3600);
-            $weatherInfo = (new Weatherd()) -> displayWeather($city);
-            $memcache_obj->save($weatherInfo, $key, array(), 3600);
-    }
 
-    $memcache_obj->save($weatherInfo, $key, array(), 3600);
-        
-    $json = $this->_helper->json->encodeJson($weatherInfo);
-    echo $json;
+        $memcache_obj->save($weatherInfo, $key, array(), 3600);
+
+        $weatherInfo = (new Weatherd()) -> displayWeather($city);
+
+        $memcache_obj->save($weatherInfo, $key, array(), 3600);
+
+        $json = $this->_helper->json->encodeJson($weatherInfo);
+        echo $json;
+    }
 }
