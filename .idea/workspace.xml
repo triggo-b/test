@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7bcd7c1-15e1-478d-b0a9-72d98eee00a3" name="Default" comment="Merge branch 'test'&#10;&#10;Conflicts:&#10;&#9;application/modules/default/controllers/WeatherController.php&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="deff.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,19 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WeatherController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WeatherController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="393" selection-end="575" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="629">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="47" selection-start="148" selection-end="148" vertical-scroll-proportion="0.09465479" vertical-offset="0" max-vertical-offset="898">
+            <state line="31" column="1" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5868597" vertical-offset="0" max-vertical-offset="898">
               <folding />
             </state>
           </provider>
@@ -268,13 +260,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="393" selection-end="575" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/ErrorController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
@@ -285,6 +270,13 @@
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="47" selection-start="148" selection-end="148" vertical-scroll-proportion="0.09465479" vertical-offset="0" max-vertical-offset="898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/WeatherController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="1" selection-start="948" selection-end="948" vertical-scroll-proportion="0.5868597" vertical-offset="0" max-vertical-offset="898">
           <folding />
         </state>
       </provider>
