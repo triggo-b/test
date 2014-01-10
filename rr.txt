@@ -1,3 +1,1 @@
-version first - when .gitignore ignore (not work)
-second
-to master!!
+have a nice day
