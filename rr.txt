@@ -1,0 +1,3 @@
+version first - when .gitignore ignore (not work)
+second
+to master!!
