@@ -1,1 +1,2 @@
-version first - when .gitignore ignore
+version first - when .gitignore ignore (not work)
+second
