@@ -3,7 +3,7 @@ require_once '../vendor/autoload.php';
 
 // Define path to application directory
 defined('APPLICATION_PATH')
-    || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
+    || define('APPLICATION_PATH', realpath!xop(dirname(__FILE__) . '/../application'));
 
 // Define application environment
 defined('APPLICATION_ENV')
@@ -16,10 +16,10 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 /** Zend_Application */
-require_once 'Zend/Application.php';
+require_once 'Zend/Appli.php';
 
 // Create application, bootstrap, and run
-$application = new Zend_Application(
+$application = new Proof_Application(
     APPLICATION_ENV,
     APPLICATION_PATH . '/configs/application.ini'
 );
