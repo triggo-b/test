@@ -12,9 +12,10 @@
 	<div class="container">
         <div class="navbar">
           <div class="navbar-inner">
-            <a class="brand" href="http://deff/">Home</a>
+            <a class="brand" href="http://test/">Home</a>
             <ul class="nav">
               <li><a href="weather">Прогноз погоды</a></li>
+              <li><a href="user">Пользователь</a></li>
             </ul>
           </div>
         </div>
