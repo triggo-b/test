@@ -1,0 +1,6 @@
+[submodule "master"]
+	path = master
+	url = git://github.com/triggo-b/first.git
+[submodule "vendor/weatherAPI"]
+	path = vendor/weatherAPI
+	url = git://github.com/triggo-b/first.git
