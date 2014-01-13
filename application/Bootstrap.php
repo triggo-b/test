@@ -24,7 +24,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     }
     
     protected function _initRoute(){
-        // Получаем маршрут, по-умолчанию
         $router = Zend_Controller_Front::getInstance()->getRouter();
         
         $router->addRoute('weather',
