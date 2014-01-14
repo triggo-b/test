@@ -29,7 +29,10 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $router->addRoute('weather',
                 new Zend_Controller_Router_Route('/weatherinfo',
                         array('controller' => 'weather', 'action' => 'displayweather'))
-        );
+        )->addRoute('auth',
+                new Zend_Controller_Router_Route('/weatherinfo',
+                    array('controller' => 'login', 'action' => 'auth'))
+            );
     }
     
     protected function _initMemcache() {

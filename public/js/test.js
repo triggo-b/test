@@ -2,5 +2,23 @@
  * Created by savrasov.boris on 13.01.14.
  */
 $(document).ready( function() {
-    $('#userForm').submit(function() {alert(1)})
+
+    form = $('#authForm');
+
+    form.submit(function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: '/login/auth',
+            type: 'post',
+            data: form.serialize(),
+            success: function(response) {
+                alert(response);
+            },
+            error: function() {
+                alert('something wrong');
+            }
+        });
+    });
+
 });

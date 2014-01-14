@@ -17,6 +17,7 @@
             <ul class="nav">
               <li><a href="weather">Прогноз погоды</a></li>
               <li><a href="user">Пользователь</a></li>
+              <li><a href="login">Авторизация</a></li>
             </ul>
           </div>
         </div>

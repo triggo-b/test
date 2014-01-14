@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1-DEV, created on 2014-01-14 08:33:24
+<?php /* Smarty version Smarty-3.1-DEV, created on 2014-01-14 11:54:22
          compiled from "C:\Users\savrasov.boris\project\test\application\modules\default\views\templates\static\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1518252d3d8de9850d3-79533327%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2bcb28e23f98858a90e037c81fffb301d6c261bd' => 
     array (
       0 => 'C:\\Users\\savrasov.boris\\project\\test\\application\\modules\\default\\views\\templates\\static\\header.tpl',
-      1 => 1389688403,
+      1 => 1389700392,
       2 => 'file',
     ),
   ),
@@ -44,6 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <ul class="nav">
               <li><a href="weather">Прогноз погоды</a></li>
               <li><a href="user">Пользователь</a></li>
+              <li><a href="login">Авторизация</a></li>
             </ul>
           </div>
         </div>
