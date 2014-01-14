@@ -12,4 +12,5 @@ class UserController extends Zend_Controller_Action
         $this->view->userHello = "Добро пожаловать в usersController";
         $this->view->headScript()->appendFile('http://test/js/test.js');
     }
+
 }
