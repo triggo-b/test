@@ -1,20 +1,22 @@
 <?php
 namespace Weather;
-use Weather\Response;
-require_once 'Response.php';
+//use Weather\Client;
+require_once 'Client.php';
 
-class Weatherd extends Response
+class Weatherd
 {
     public function __construct()
     {
-
+        $weather = Client::getWeatherByCity();
+        print_r($weather);
     }
     public function getPressure()
     {
-        return 12345;
+        return $this->getPressure();
     }
+
 }
 
-$Wcity = new Weatherd;
-$myCity = $Wcity->getWeatherByCity('Воронеж');
-echo $Wcity->getPressure();
+$ww = new Weatherd('Воронеж');
+$myCity = $ww->getWeatherByCity('Воронеж');
+$myCity->getPressure();

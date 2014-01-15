@@ -1,7 +1,7 @@
 <?php
 namespace Weather;
 
-class Response
+class Client
 {
     const URL = 'http://api.openweathermap.org/data/2.5/weather?q=';
 
@@ -9,9 +9,11 @@ class Response
     {
         $url = self::URL . $city . ',ru';
         $data = file_get_contents($url);
-        $myArr = json_decode($data);
 
+//        $myArr = json_decode($data);
 //        print_r($myArr);
-        return $myArr;
+//        return $myArr;
+
+        return new Client($data);
     }
 }

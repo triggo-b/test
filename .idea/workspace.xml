@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f99744f8-a79a-49a9-95a1-5c0fcafa7373" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/weather.iml" afterPath="$PROJECT_DIR$/.idea/weather.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Weather/Response.php" afterPath="$PROJECT_DIR$/lib/Weather/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Weather/information" />
+      <change type="MOVED" beforePath="C:\Users\savrasov.boris\project\weather\lib\Weather\Response.php" afterPath="$PROJECT_DIR$/lib/Weather/Client.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Weather/Weatherd.php" afterPath="$PROJECT_DIR$/lib/Weather/Weatherd.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,13 +27,13 @@
     <favorites_list name="weather" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46713206">
+    <splitter split-orientation="horizontal" split-proportion="0.31064573">
       <split-first>
         <leaf>
-          <file leaf-file-name="Response.php" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
+          <file leaf-file-name="Client.php" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lib/Weather/Client.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="5" selection-start="163" selection-end="163" vertical-scroll-proportion="0.19708847" vertical-offset="0" max-vertical-offset="893">
+                <state line="18" column="1" selection-start="379" selection-end="379" vertical-scroll-proportion="0.45" vertical-offset="0" max-vertical-offset="880">
                   <folding />
                 </state>
               </provider>
@@ -46,7 +46,7 @@
           <file leaf-file-name="Weatherd.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/Weather/Weatherd.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="25" selection-start="324" selection-end="324" vertical-scroll-proportion="0.4680851" vertical-offset="0" max-vertical-offset="893">
+                <state line="7" column="32" selection-start="124" selection-end="124" vertical-scroll-proportion="0.1724524" vertical-offset="0" max-vertical-offset="893">
                   <folding />
                 </state>
               </provider>
@@ -69,6 +69,8 @@
       <list>
         <option value="$PROJECT_DIR$/lib/Weather/Connect.php" />
         <option value="$PROJECT_DIR$/lib/Weather/Response.php" />
+        <option value="$PROJECT_DIR$/lib/Weather/information" />
+        <option value="$PROJECT_DIR$/lib/Weather/Client.php" />
         <option value="$PROJECT_DIR$/lib/Weather/Weatherd.php" />
       </list>
     </option>
@@ -224,7 +226,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
+    <entry file="file://$PROJECT_DIR$/lib/Weather/Client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="21" selection-start="307" selection-end="307" vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="440">
           <folding />
@@ -238,16 +240,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
+    <entry file="file://$PROJECT_DIR$/lib/Weather/information">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="163" selection-end="163" vertical-scroll-proportion="0.19708847" vertical-offset="0" max-vertical-offset="893">
+        <state line="51" column="33" selection-start="897" selection-end="897" vertical-scroll-proportion="0.95238096" vertical-offset="242" max-vertical-offset="1254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Weather/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="379" selection-end="379" vertical-scroll-proportion="0.45" vertical-offset="0" max-vertical-offset="880">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Weather/Weatherd.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="324" selection-end="324" vertical-scroll-proportion="0.4680851" vertical-offset="0" max-vertical-offset="893">
+        <state line="7" column="32" selection-start="124" selection-end="124" vertical-scroll-proportion="0.1724524" vertical-offset="0" max-vertical-offset="893">
           <folding />
         </state>
       </provider>
