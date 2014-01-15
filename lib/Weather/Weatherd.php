@@ -1,34 +1,20 @@
 <?php
 namespace Weather;
 use Weather\Response;
-//require_once 'Response.php';
+require_once 'Response.php';
 
-class Weatherd
+class Weatherd extends Response
 {
-
-    public function getPressure ($city = false)
+    public function __construct()
     {
-        $info = new Response();
-        return $info->getWeather($city)->main->pressure;
+
     }
-
-    public function getWindspeed ($city = false)
+    public function getPressure()
     {
-        $info = new Response();
-        return $info->getWeather($city)->wind->speed;
-    }
-
-    public function displayWeather ($city = false)
-    {
-		$weatherInfo = array(
-                                'ownCity'   => $city,
-                                'pressure'  => $this->getPressure($city),
-                                'windSpeed' => $this->getWindspeed($city)
-                        );
-
-        return $weatherInfo;
+        return 12345;
     }
 }
-//$r = new Weatherd;
-//$info = $r->displayWeather('Воронеж');
-//print_r($info);
+
+$Wcity = new Weatherd;
+$myCity = $Wcity->getWeatherByCity('Воронеж');
+echo $Wcity->getPressure();
