@@ -1,28 +1,21 @@
 <?php
 namespace Weather;
+use Weather\Response;
+//require_once 'Response.php';
 
 class Weatherd
 {
-    const URL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-
-    public function getWeather ($city = false)
-    {
-        $url = self::URL . $city . ',ru';
-        $data = file_get_contents($url);
-        $myArr = json_decode($data);
-        return $myArr;
-    }
 
     public function getPressure ($city = false)
     {
-        $info = $this->getWeather($city);
-        return $info->main->pressure;
+        $info = new Response();
+        return $info->getWeather($city)->main->pressure;
     }
 
     public function getWindspeed ($city = false)
     {
-        $info = $this->getWeather($city);
-        return $info->wind->speed;
+        $info = new Response();
+        return $info->getWeather($city)->wind->speed;
     }
 
     public function displayWeather ($city = false)
@@ -36,3 +29,6 @@ class Weatherd
         return $weatherInfo;
     }
 }
+//$r = new Weatherd;
+//$info = $r->displayWeather('Воронеж');
+//print_r($info);
