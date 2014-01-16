@@ -1,30 +1,10 @@
 {
     "require": {
-        "phpunit/phpunit": "3.7.*",
-		"triggo-b/first": "*"
+        "phpunit/phpunit": "3.7.*"
         },
     "autoload": {
         "psr-0": {
-            "": "library/"
+            "Weather": "lib/"
         }
-    },
-	"repositories": [
-		{
-				"type": "package",
-				"package": {
-					"name": "triggo-b/first",
-					"version": "1.0.0",
-					"source": {
-						"url":  "https://github.com/triggo-b/first.git",
-						"type": "git",
-						"reference": "master"
-					},
-	                "autoload": {
-		                 "psr-0": {
-			              "Weather": "lib/"
-			             }
-	                }
-				}
-		}
-	]
+    }
 }
