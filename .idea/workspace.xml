@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f99744f8-a79a-49a9-95a1-5c0fcafa7373" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Weather/Response.php" />
-      <change type="DELETED" beforePath="C:\Users\savrasov.boris\project\weather\lib\Weather\Weatherd.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/Weather/Client.php" afterPath="$PROJECT_DIR$/lib/Weather/Client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Weather/Response.php" afterPath="$PROJECT_DIR$/lib/Weather/Response.php" />
     </list>
     <ignored path="weather.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,19 +40,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Response.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Response.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="11" selection-start="56" selection-end="56" vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="1232">
+                <state line="10" column="5" selection-start="205" selection-end="205" vertical-scroll-proportion="0.24636059" vertical-offset="0" max-vertical-offset="1210">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/composer.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="893">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="374">
                   <folding />
                 </state>
               </provider>
@@ -265,16 +261,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="56" selection-end="56" vertical-scroll-proportion="-2.1290324" vertical-offset="0" max-vertical-offset="1232">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
+    <entry file="file://$PROJECT_DIR$/lib/Weather/Response.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="924">
+        <state line="10" column="5" selection-start="205" selection-end="205" vertical-scroll-proportion="0.24636059" vertical-offset="0" max-vertical-offset="1210">
           <folding />
         </state>
       </provider>

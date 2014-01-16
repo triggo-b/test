@@ -8,7 +8,6 @@ class Response
     public function __construct($weatherList)
     {
         $this->weatherInfo = json_decode($weatherList);
-        print_r($this->weatherInfo);
     }
 
     public function getPressure()
