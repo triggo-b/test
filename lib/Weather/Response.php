@@ -38,12 +38,12 @@ class Response
 
 
 
-header('Content-Type: text/html; charset=utf-8');
-$m = new Client;
-$cityWeather = $m->getWeatherByCity('Воронеж');
-echo "<hr/>";
-echo "Населенный пункт: " . $cityWeather->getCity();
-echo "<br/>Температура: " . $cityWeather->getTemperature();
-echo "<br/>Атм. давление: " . $cityWeather->getPressure();
-echo "<br/>Скорость ветра: " . $cityWeather->getWindSpeed();
+//header('Content-Type: text/html; charset=utf-8');
+//$m = new Client;
+//$cityWeather = $m->getWeatherByCity('Воронеж');
+//echo "<hr/>";
+//echo "Населенный пункт: " . $cityWeather->getCity();
+//echo "<br/>Температура: " . $cityWeather->getTemperature();
+//echo "<br/>Атм. давление: " . $cityWeather->getPressure();
+//echo "<br/>Скорость ветра: " . $cityWeather->getWindSpeed();
 
